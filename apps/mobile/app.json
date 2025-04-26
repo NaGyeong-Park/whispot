@@ -12,7 +12,10 @@
       "supportsTablet": true,
       "bundleIdentifier": "test",
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "UIBackgroundModes": ["location"],
+        "NSLocationWhenInUseUsageDescription": "Use Location When in use",
+        "NSLocationAlwaysUsageDescription": "Use Location Always"
       }
     },
     "android": {
@@ -35,6 +38,13 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Whispot to use your location.",
+          "isIosBackgroundLocationEnabled": true
         }
       ]
     ],
