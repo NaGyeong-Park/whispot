@@ -1,9 +1,7 @@
+import MainPage from "./pages/main";
+
 function App() {
-  return (
-    <main>
-      <h1>Vite + React</h1>
-    </main>
-  );
+  return <MainPage />;
 }
 
 export default App;
